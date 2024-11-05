@@ -1,6 +1,7 @@
 # At the top of your file, add:
 import os
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 load_dotenv()
 
@@ -87,4 +88,5 @@ def main():
 
 
 if __name__ == "__main__":
+    keep_alive()  
     main()

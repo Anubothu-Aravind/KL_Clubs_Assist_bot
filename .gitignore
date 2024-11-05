@@ -1,16 +1,12 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Environment
 .env
 
-# IDE
 .idea/
 *.iml
 .vscode/
 
-# Virtual Environment
 venv/
 ENV/
