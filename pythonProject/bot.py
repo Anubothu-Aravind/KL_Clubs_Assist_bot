@@ -9,9 +9,6 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
-# Replace 'YOUR_BOT_TOKEN' with your actual BotFather token
-BOT_TOKEN = '8191672884:AAHNTDNNyGStchaMCFdWzfsOfrehhsyEHLg'
-
 # Define a list of clubs
 clubs = [
     "Aprameya Club", "Broadband Networks Club", "Design Circle", "Expedite Club",
