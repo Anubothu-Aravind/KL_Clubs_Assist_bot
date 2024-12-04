@@ -86,6 +86,11 @@ async def clubs_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     club_names = [row[0] for row in cursor.fetchall()]
     conn.close()
 
+    # Ensure updated list is fetched every time
+    if not club_names:
+        await update.message.reply_text("No clubs available.")
+        return
+
     keyboard = [[InlineKeyboardButton(club, callback_data=club)] for club in club_names]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("Here is the list of Clubs:", reply_markup=reply_markup)
